@@ -1,6 +1,6 @@
 import React from 'react'
 import { BsTwitter } from "react-icons/bs";
-import { PiBookmarkSimple, PiBookmarkSimpleBold, PiHashBold } from "react-icons/pi";
+import { PiBookmarkSimpleBold, PiHashBold } from "react-icons/pi";
 import { MdOutlineTextsms } from "react-icons/md";
 import { FaUser } from "react-icons/fa6";
 import { BiHomeCircle, BiMoney } from 'react-icons/bi';
@@ -60,7 +60,7 @@ const sidebar: React.FC = () => {
   <div className=" pr-4  text-xl">
       <ul>
         {sidebarMenuItems.map((item) => (
-        <li key = {item.title} className="flex justify-start items-center gap-5 w-fit mx-4 pl-3  pr-3 py-2  mb-2 rounded-full  hover:bg-gray-800 cursor-pointer">
+        <li className="flex justify-start items-center gap-5 w-fit mx-4 pl-3  pr-3 py-2  mb-2 rounded-full  hover:bg-gray-800 cursor-pointer">
           <span className='text-2xl'>{item.icon}</span>
           <span>{item.title}</span>
           </li>
